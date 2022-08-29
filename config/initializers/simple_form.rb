@@ -9,11 +9,11 @@
 # Use this setup block to configure all options available in SimpleForm.
 SimpleForm.setup do |config|
 
-  config.wrappers :default, class: "form-group" do |b|
+  config.wrappers :default, class: "form__group" do |b|
     b.use :html5
     b.use :placeholder
     b.use :label, class: "visually-hidden"
-    b.use :input, class: "form-input", error_class: "form-input-invalid"
+    b.use :input, class: "form__input", error_class: "form__input--invalid"
   end
 
   config.generate_additional_classes_for = []
