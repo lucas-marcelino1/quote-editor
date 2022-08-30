@@ -6,12 +6,14 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag 'application', media: 'all','data-turbolinks-track':'reload' %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
   <body>
-    <%= notice %>
+    <div class="container">
+      <h3 class="successfully-message"><%= notice %></h3>
+    </div>
     <%= yield %>
   </body>
 </html>
